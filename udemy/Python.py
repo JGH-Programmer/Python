@@ -3,13 +3,16 @@ K = int(input())
 List = []
 
 for i in range(K):
-    N,M = map(int,input().split())
-    List.append((N,M))
+    word = input()
+    List.append((word,len(word)))
 
-List.sort()
+List = set(List)
+List = sorted(List, key = lambda x : x[1])
 
 for i in List:
-    print(i[0], i[1])
+    print(i[0])
+
+
 
 
 
