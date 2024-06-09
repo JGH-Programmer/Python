@@ -1,39 +1,23 @@
-def add(n1,n2):
-    return n1+n2
-def minus(n1,n2):
-    return n1-n2
-def divide(n1,n2):
-    return n1/n2
-def multiply(n1,n2):
-    return n1*n2
+class User:
+    def __init__(self,user_id,username):
+        self.id = user_id
+        self.username = username
+        self.followers = 0
+        self.followings = 0
 
+    def follow(self, user):
+        user.followers += 1
+        self.followings += 1
 
+user_1 = User("001","angel") # user_1 followers = 0 followings = 0
+user_2 = User("002","Angle") #user_2 followers = 0 followings = 0
 
+user_1.follow(user_2)
 
-
-operations = {
-    "+" : add,
-    "-": minus,
-    "/": divide,
-    "*": multiply
-}
-
-num1 = int(input())
-num2 = int(input())
-
-
-for symbol in operations:
-    print(symbol)
-operation_symbol = input()
-
-calculation_function = operations[operation_symbol]
-answer = calculation_function(num1,num2)
-
-print(answer)
-
-
-
-
+print(user_1.followers)
+print(user_1.followings)
+print(user_2.followers)
+print(user_2.followings)
 
 
 
