@@ -1,6 +1,7 @@
 from turtle import Turtle, Screen
 import random
 
+#터틀 기본설정
 Turtle_G = Turtle()
 Turtle_G.shape("turtle")
 Turtle_G.color("Black")
