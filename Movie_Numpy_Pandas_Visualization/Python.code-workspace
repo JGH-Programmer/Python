@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "Python",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"terminal.integrated.fontFamily": "D2Coding, 'Noto Sans Mono', monospace"
+	}
+}
