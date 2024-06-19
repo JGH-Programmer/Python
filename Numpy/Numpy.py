@@ -4,7 +4,6 @@ A = np.array([[1, 2], [3, 4], [5, 6]])
 
 B = np.concatenate(([A,A]),axis=1)
 C = A.flatten()
-print(C)
 
 # 데이터 생성
 data = np.array([[1, 2], [3, 4], [5, 6]])
